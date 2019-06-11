@@ -1,0 +1,202 @@
+
+body{
+    background-color: #f0f0f7 !important;
+}
+nav{
+    background: transparent !important;
+    border-bottom: none !important;
+    border:none !important;
+    width: 100% !important;
+    position: absolute !important;
+}
+.nav a{
+    color:white !important;
+    font-weight: 600
+}
+
+
+.navbar-toggle {
+  float: left !important;
+  margin-left: 15px;
+}
+
+.navbar-header.navbar-right.pull-right {
+  margin-right: 15px;
+}
+
+.navbar-right > li {
+  float: left;
+}
+
+.nav ul li{
+    margin-right: 1rem !important;
+}
+.login{
+    padding-top:1rem !important;
+}
+.login a{
+    padding-top:0.5rem !important;
+    padding-bottom:0.5rem !important;
+    padding-left:1rem !important;
+    padding-right:1rem !important;
+    margin-left: 2rem;
+    border-radius: 8px;
+    border:2px solid white;
+}
+.banner{
+    padding:12rem 0; 
+    background: url("assets/images/Artboard.png") ;
+    background-size:cover ;
+    /* position: absolute; */
+    top:0;
+    z-index: -1;
+
+}
+.banner-content{
+    max-width:50%;
+    margin:0 auto;
+
+}
+.banner-content p{
+    text-align: center;
+    color:white;
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+.banner-content  .input-group{
+    height:4.4rem;
+padding:0 !important;
+}
+.banner-content .input-group input{
+    height:4.4rem;
+    background-color: #e4e3ef;
+    padding:0 2rem;
+    font-style: italic;
+    color:#727272;
+}
+.banner-content .input-group-btn button{
+    height: 4.4rem;
+    min-width:150px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    background-color: #15BF84;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.options{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin:4rem;
+}
+.card{
+    width:200px;
+    height:200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    margin:10px 20px;
+    background: white;
+    box-shadow: 0 0 4px 4px lightgrey;
+}
+.icon{
+    width:max-content;
+    margin: 0 auto;
+}
+.card img{
+    height:92px;
+    margin:0 auto;
+}
+.card-name h4{
+    color:#10046D;
+    font-weight: bolder;
+    text-align: center;
+    margin-top:20px; 
+    font-size: 16px;
+}
+
+
+@media only screen and (max-width: 37.5em) {
+    .card{
+        height: 118px;
+        width: 118px;
+    }
+    .card img{
+        height:54px;
+    }
+    .card-name h4{
+        font-size: 8px;
+    }
+    .banner{
+        height: 10px;   
+    }
+}
+.small button{
+    display: none ;
+ }
+ .large button{
+     display: block;
+ }
+
+@media (max-width:900px){
+    .banner-content{
+        max-width: 70%
+    }
+}
+
+@media (max-width:700px){
+    .large button{
+       display: none !important;
+    }
+    .banner-content  .input-group{
+        height:3rem;
+    }
+    .small button{
+        display: block;
+        height: 100%;
+        min-width:30px !important;
+        transform: translateX(-10px);
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+    }
+    .banner-content{
+        max-width:80%;
+        margin:0 auto;
+    
+    }
+    .login{
+        padding-top: .5rem !important;
+    }
+    
+}
+@media (max-width:570px){
+    .options{
+        margin: 0;
+    }
+    .navbar-brand img{
+        max-width:200px;
+    }
+
+    
+}
+@media (max-width:360px){
+    .navbar-brand img{
+        max-width:125px;
+    }
+
+    
+}
+@media (max-width:280px){
+    .navbar-brand img{
+        max-width:100px;
+    }
+    nav ul li a{
+        padding:8px  0!important;
+    }
+
+    
+}
