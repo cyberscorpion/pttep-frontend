@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-<link rel="stylesheet" href="index.css">
-<link rel="stylesheet" href="approval.css">
+<link rel="stylesheet" href="index.css"  >
+<link rel="stylesheet" href="approval.css"  >
 <!-- css only     -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <!-- JS, Popper.js, and jQuery -->
@@ -27,6 +28,14 @@
     }
     .banner-content  .input-group,.banner-content .input-group input,.banner-content .input-group-btn button{
         height: 3rem;
+    }
+    @media (max-width:800px){
+        .banner{
+            padding-top:75px;
+        }
+        .banner-content{
+            max-width: 90%;
+        }
     }
 </style>
 </head>
@@ -77,7 +86,7 @@
             </div>
             <div class="option-item">
                 <div class="icon">
-                    <img src="assets/images/settings.svg" alt="">
+                    <img src="assets/images/like.svg" alt="">
                 </div>
                 <div class="option-name">
                     <h4>APPROVAL CENTRAL</h4>
@@ -85,7 +94,7 @@
             </div>
             <div class="option-item">
                 <div class="icon">
-                    <img src="assets/images/leaflet.svg" alt="">
+                    <img src="assets/images/like.svg" alt="">
                 </div>
                 <div class="option-name">
                     <h4>APPROVAL CENTRAL</h4>
@@ -93,7 +102,7 @@
             </div>
             <div class="option-item">
                 <div class="icon">
-                    <img src="assets/images/return-to-the-past.svg" alt="">
+                    <img src="assets/images/like.svg" alt="">
                 </div>
                 <div class="option-name">
                     <h4>APPROVAL CENTRAL</h4>
@@ -132,77 +141,170 @@
                 </div>
             </div>
             <div class="requests">
+                <div class="mobile mobile-back">
+                        
+                    <h4>
+                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                         Back
+                    </h4>
+
+                </div>
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Search by messages/request id">
+                    
+                    <i class="fa fa-search mobile" aria-hidden="true"></i>
+                    <i class="fa fa-filter mobile" aria-hidden="true"></i>
+
+                </div>
+
+                <div class="message-container high message-active">
+                    <div class="message-item  ">
+                        <div class="message-logo">
+                            <img src="assets/images/tata.jpg" alt="">
+                        </div>
+                        <div class="message-name">
+                            <h4>TATA - D4521486</h4>
+                        </div>
+                        <div class="message-date">
+                            <h4>JUN 4</h4>
+                        </div>
+                        <div class="message-text">Lorem ipsum dolor sit amet consectetu....</div>
+                        <div class="request-controls mobile mobile-controls">
+                            <button class="reject btn btn-danger">Reject</button>
+                            <button class="btn btn-success">Approve</button> 
+                        </div>
+                        <div class=" mobile mobile-more">
+                            <button class="more-btn">More Details</button>
+                        </div>
+                    </div>
+                    <div class="more mobile">
+                        <p id="request-more-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam totam vitae corporis illum repellat magnam quidem culpa! Mollitia amet placeat accusamus, omnis assumenda illo architecto harum quidem repudiandae? Ipsam, magni
+                        </p>
+                        <button class="less-btn">Show Less <i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+                     </div>
                 </div>
 
 
-                <div class="message-item high">
-                    <div class="message-logo">
-                        <img src="assets/images/tata.jpg" alt="">
+
+                <div class="message-container">
+                    <div class="message-item  ">
+                        <div class="message-logo">
+                            <img src="assets/images/tata.jpg" alt="">
+                        </div>
+                        <div class="message-name">
+                            <h4>TATA - D4521486</h4>
+                        </div>
+                        <div class="message-date">
+                            <h4>JUN 4</h4>
+                        </div>
+                        <div class="message-text">Lorem ipsum dolor sit amet consectetu....</div>
+                        <div class="request-controls mobile mobile-controls">
+                            <button class="reject btn btn-danger">Reject</button>
+                            <button class="btn btn-success">Approve</button> 
+                        </div>
+                        <div class=" mobile mobile-more">
+                            <button class="more-btn">More Details</button>
+                        </div>
                     </div>
-                    <div class="message-name">
-                        <h4>TATA - D4521486</h4>
-                    </div>
-                    <div class="message-date">
-                        <h4>JUNE 4</h4>
-                    </div>
-                    <div class="message-text">Lorem ipsum dolor sit amet consectetu....</div>
+                    <div class="more mobile">
+                        <p id="request-more-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam totam vitae corporis illum repellat magnam quidem culpa! Mollitia amet placeat accusamus, omnis assumenda illo architecto harum quidem repudiandae? Ipsam, magni
+                        </p>
+                        <button class="less-btn">Show Less <i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+                     </div>
                 </div>
 
-                <div class="message-item ">
-                    <div class="message-logo">
-                        <img src="assets/images/tata.jpg" alt="">
+
+                <div class="message-container low">
+                    <div class="message-item  ">
+                        <div class="message-logo">
+                            <img src="assets/images/tata.jpg" alt="">
+                        </div>
+                        <div class="message-name">
+                            <h4>TATA - D4521486</h4>
+                        </div>
+                        <div class="message-date">
+                            <h4>JUN 4</h4>
+                        </div>
+                        <div class="message-text">Lorem ipsum dolor sit amet consectetu....</div>
+                        <div class="request-controls mobile mobile-controls">
+                            <button class="reject btn btn-danger">Reject</button>
+                            <button class="btn btn-success">Approve</button> 
+                        </div>
+                        <div class=" mobile mobile-more">
+                            <button class="more-btn">More Details</button>
+                        </div>
                     </div>
-                    <div class="message-name">
-                        <h4>TATA - D4521486</h4>
-                    </div>
-                    <div class="message-date">
-                        <h4>JUNE 4</h4>
-                    </div>
-                    <div class="message-text">Lorem ipsum dolor sit amet consectetu....</div>
+                    <div class="more mobile">
+                        <p id="request-more-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam totam vitae corporis illum repellat magnam quidem culpa! Mollitia amet placeat accusamus, omnis assumenda illo architecto harum quidem repudiandae? Ipsam, magni
+                        </p>
+                        <button class="less-btn">Show Less <i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+                     </div>
                 </div>
 
-                <div class="message-item low">
-                    <div class="message-logo">
-                        <img src="assets/images/tata.jpg" alt="">
+
+                <div class="message-container ">
+                    <div class="message-item  ">
+                        <div class="message-logo">
+                            <img src="assets/images/tata.jpg" alt="">
+                        </div>
+                        <div class="message-name">
+                            <h4>TATA - D4521486</h4>
+                        </div>
+                        <div class="message-date">
+                            <h4>JUN 4</h4>
+                        </div>
+                        <div class="message-text">Lorem ipsum dolor sit amet consectetu....</div>
+                        <div class="request-controls mobile mobile-controls">
+                            <button class="reject btn btn-danger">Reject</button>
+                            <button class="btn btn-success">Approve</button> 
+                        </div>
+                        <div class=" mobile mobile-more">
+                            <button class="more-btn">More Details</button>
+                        </div>
                     </div>
-                    <div class="message-name">
-                        <h4>TATA - D4521486</h4>
-                    </div>
-                    <div class="message-date">
-                        <h4>JUNE 4</h4>
-                    </div>
-                    <div class="message-text">Lorem ipsum dolor sit amet consectetu....</div>
+                    <div class="more mobile">
+                        <p id="request-more-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam totam vitae corporis illum repellat magnam quidem culpa! Mollitia amet placeat accusamus, omnis assumenda illo architecto harum quidem repudiandae? Ipsam, magni
+                        </p>
+                        <button class="less-btn">Show Less <i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+                     </div>
                 </div>
 
-                <div class="message-item ">
-                    <div class="message-logo">
-                        <img src="assets/images/tata.jpg" alt="">
+
+                <div class="message-container intermediate">
+                    <div class="message-item  ">
+                        <div class="message-logo">
+                            <img src="assets/images/tata.jpg" alt="">
+                        </div>
+                        <div class="message-name">
+                            <h4>TATA - D4521486</h4>
+                        </div>
+                        <div class="message-date">
+                            <h4>JUN 4</h4>
+                        </div>
+                        <div class="message-text">Lorem ipsum dolor sit amet consectetu....</div>
+                        <div class="request-controls mobile mobile-controls">
+                            <button class="reject btn btn-danger">Reject</button>
+                            <button class="btn btn-success">Approve</button> 
+                        </div>
+                        <div class=" mobile mobile-more">
+                            <button class="more-btn">More Details</button>
+                        </div>
                     </div>
-                    <div class="message-name">
-                        <h4>TATA - D4521486</h4>
-                    </div>
-                    <div class="message-date">
-                        <h4>JUNE 4</h4>
-                    </div>
-                    <div class="message-text">Lorem ipsum dolor sit amet consectetu....</div>
-                </div>
-                <div class="message-item intermediate">
-                    <div class="message-logo">
-                        <img src="assets/images/tata.jpg" alt="">
-                    </div>
-                    <div class="message-name">
-                        <h4>TATA - D4521486</h4>
-                    </div>
-                    <div class="message-date">
-                        <h4>JUNE 4</h4>
-                    </div>
-                    <div class="message-text">Lorem ipsum dolor sit amet consectetu....</div>
+                    <div class="more mobile">
+                        <p id="request-more-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam totam vitae corporis illum repellat magnam quidem culpa! Mollitia amet placeat accusamus, omnis assumenda illo architecto harum quidem repudiandae? Ipsam, magni
+                        </p>
+                        <button class="less-btn">Show Less <i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+                     </div>
                 </div>
 
-                
 
+
+    
 
 
             </div>
@@ -226,6 +328,8 @@
                         <div class="request-date">Jun 4</div>
                     </div>
                     <div class="request-controls">
+                            <button class="more-btn">More Details</button>
+
                         <button class="reject btn btn-danger">Reject</button>
                         <button class="btn btn-success">Approve</button> 
                     </div>
@@ -233,7 +337,7 @@
 
                 <div class="request-content">
                     <p>hi lorem</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam totam vitae corporis illum repellat magnam quidem culpa! Mollitia amet placeat accusamus, omnis assumenda illo architecto harum quidem repudiandae? Ipsam, magni.</p>
+                    <p id="request-content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam totam vitae corporis illum repellat magnam quidem culpa! Mollitia amet placeat accusamus, omnis assumenda illo architecto harum quidem repudiandae? Ipsam, magni.</p>
                     <div class="reply">
                             <h5>Click here to Reply</h5>
                     </div>
@@ -244,5 +348,37 @@
     </div>
 
 
+
+
+    <script>
+        var mobileBox = document.getElementById("request-more-content");
+        var text = document.getElementById("request-content-text");
+
+        var btn = document.getElementsByClassName("mobile-more");
+        var i=0;
+        console.log(btn.length)
+        for(i=0;i<btn.length;i++){
+            btn[i].addEventListener("click",function(){
+                console.log(this)
+                var el =  this.parentElement.nextElementSibling
+                if(el.classList.contains("show-more")){
+                    el.classList.remove("show-more")
+                }
+                else{
+                    el.classList.add("show-more")
+
+                }
+            })
+        }
+        var lbtn = document.getElementsByClassName("less-btn");
+        var i=0;
+        console.log(lbtn.length)
+        for(i=0;i<lbtn.length;i++){
+            lbtn[i].addEventListener("click",function(){
+                console.log(this)
+                this.parentElement.classList.remove("show-more")
+            })
+        }
+    </script>
 </body>
 </html>

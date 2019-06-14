@@ -1,24 +1,15 @@
 
-<<<<<<< HEAD
 
 .main-section{
     width: 80% !important;
     min-width: 800px;
     max-width:100%;
-=======
-.main-section{
-    width: 70% !important;
->>>>>>> 670281e1b6c0e05f506063118584653c4afee79a
     margin-top: 2rem;
 }
 .options-nav{
     margin-bottom: 2rem;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-<<<<<<< HEAD
-=======
-    cursor: pointer;
->>>>>>> 670281e1b6c0e05f506063118584653c4afee79a
 }
 
 .option-item{
@@ -56,11 +47,7 @@
 
 .option-details{
     display: grid;
-<<<<<<< HEAD
     grid-template-columns: 20% 25% auto;
-=======
-    grid-template-columns: 20% 30% auto;
->>>>>>> 670281e1b6c0e05f506063118584653c4afee79a
     background-color:white;
 }
 .side-nav,.requests{
@@ -70,13 +57,10 @@
 .side-nav .filter-btn{
     border-bottom:1px solid lightgrey
 }
-<<<<<<< HEAD
 .filter-btn button{
     width:130px !important;
     background: #3B86FF;
 }
-=======
->>>>>>> 670281e1b6c0e05f506063118584653c4afee79a
 .side-nav .filter-btn,.requests .form-group{
     text-align: center;
     padding-top:1.25rem; 
@@ -97,10 +81,6 @@
 .filters ul li{
     margin-bottom: .8rem;
     font-size: 12px;
-<<<<<<< HEAD
-=======
-    cursor: pointer;
->>>>>>> 670281e1b6c0e05f506063118584653c4afee79a
 }
 .filter-applied{
     color:rgb(40, 122, 170);
@@ -134,20 +114,13 @@
     height:80px;
     padding: 0;
     position: relative;
-<<<<<<< HEAD
     border-bottom: 1px solid lightgray
-=======
->>>>>>> 670281e1b6c0e05f506063118584653c4afee79a
 }
 .message-logo{
     display: inline-block;
     height: 100%;
     width:60px;
-<<<<<<< HEAD
     /* outline: 2px solid red; */
-=======
-    
->>>>>>> 670281e1b6c0e05f506063118584653c4afee79a
     padding-top: 15px;
 }
 .message-logo img{
@@ -155,10 +128,7 @@
     width: 50px;
     height: 50px;
     margin: 0 auto;
-<<<<<<< HEAD
     /* outline: 2px solid red; */
-=======
->>>>>>> 670281e1b6c0e05f506063118584653c4afee79a
 }
 
 .message-name{
@@ -166,11 +136,7 @@
     width:180px;
     position: absolute;
     top:0;
-<<<<<<< HEAD
     left:60px;
-=======
-    left:70px;
->>>>>>> 670281e1b6c0e05f506063118584653c4afee79a
 }
 .message-name h4{
 
@@ -179,13 +145,8 @@
 }
 .message-text{
     position: absolute;
-<<<<<<< HEAD
     top:40%;
     left:60px;
-=======
-    top:50%;
-    left:70px;
->>>>>>> 670281e1b6c0e05f506063118584653c4afee79a
     font-size: 12px;
 }
 .message-date{
@@ -196,11 +157,7 @@
 }
 
 .message-date h4{
-<<<<<<< HEAD
     font-size: 8px;
-=======
-    font-size: 10px;
->>>>>>> 670281e1b6c0e05f506063118584653c4afee79a
 }
 
 .high{
@@ -218,11 +175,7 @@
 }
 .request-header{
     border-bottom: 1px solid lightgray;
-<<<<<<< HEAD
     padding:1rem;
-=======
-    padding:1rem 2rem;
->>>>>>> 670281e1b6c0e05f506063118584653c4afee79a
 }
 .p-high{
     padding:2px 12px;
@@ -257,11 +210,7 @@
 }
 .request-controls button{
     margin: 1rem;
-<<<<<<< HEAD
     width:25% !important;
-=======
-    width:100px !important;
->>>>>>> 670281e1b6c0e05f506063118584653c4afee79a
 }
 
 .request-content{
@@ -273,7 +222,6 @@
     padding:1rem 2rem;
     height:100px;
     margin-top: 2rem;;
-<<<<<<< HEAD
 }
 .mobile{
     display: none;
@@ -480,6 +428,4 @@
         margin-bottom: 0;
     }
 
-=======
->>>>>>> 670281e1b6c0e05f506063118584653c4afee79a
 }
