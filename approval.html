@@ -150,11 +150,27 @@
                     </h4>
 
                 </div>
+
                 <div class="form-group">
+    <div class="dropdown">
+  <button class="btn dropdown-button btn-default btn-lg dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Dropdown
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+<!--
                     <input type="text" class="form-control" placeholder="Search by messages/request id">
                     
                     <i class="fa fa-search mobile" aria-hidden="true"></i>
                     <i class="fa fa-filter mobile" aria-hidden="true"></i>
+-->
 
                 </div>
 
@@ -171,7 +187,7 @@
                         </div>
                         <div class="message-text">Lorem ipsum dolor sit amet consectetu....</div>
                         <div class="request-controls mobile mobile-controls">
-                            <button class="reject btn btn-danger">Reject</button>
+                            <button class="reject btn btn-danger" data-toggle="modal" data-target="#myModal">Reject</button>
                             <button class="btn btn-success">Approve</button> 
                         </div>
                         <div class=" mobile mobile-more">
@@ -201,7 +217,7 @@
                         </div>
                         <div class="message-text">Lorem ipsum dolor sit amet consectetu....</div>
                         <div class="request-controls mobile mobile-controls">
-                            <button class="reject btn btn-danger">Reject</button>
+                            <button class="reject btn btn-danger" data-toggle="modal" data-target="#myModal">Reject</button>
                             <button class="btn btn-success">Approve</button> 
                         </div>
                         <div class=" mobile mobile-more">
@@ -230,7 +246,7 @@
                         </div>
                         <div class="message-text">Lorem ipsum dolor sit amet consectetu....</div>
                         <div class="request-controls mobile mobile-controls">
-                            <button class="reject btn btn-danger">Reject</button>
+                            <button class="reject btn btn-danger" data-toggle="modal" data-target="#myModal">Reject</button>
                             <button class="btn btn-success">Approve</button> 
                         </div>
                         <div class=" mobile mobile-more">
@@ -259,7 +275,7 @@
                         </div>
                         <div class="message-text">Lorem ipsum dolor sit amet consectetu....</div>
                         <div class="request-controls mobile mobile-controls">
-                            <button class="reject btn btn-danger">Reject</button>
+                            <button class="reject btn btn-danger" data-toggle="modal" data-target="#myModal">Reject</button>
                             <button class="btn btn-success">Approve</button> 
                         </div>
                         <div class=" mobile mobile-more">
@@ -288,7 +304,7 @@
                         </div>
                         <div class="message-text">Lorem ipsum dolor sit amet consectetu....</div>
                         <div class="request-controls mobile mobile-controls">
-                            <button class="reject btn btn-danger">Reject</button>
+                            <button class="reject btn btn-danger" data-toggle="modal" data-target="#myModal">Reject</button>
                             <button class="btn btn-success">Approve</button> 
                         </div>
                         <div class=" mobile mobile-more">
@@ -302,18 +318,7 @@
                         <button class="less-btn">Show Less <i class="fa fa-chevron-up" aria-hidden="true"></i></button>
                      </div>
                 </div>
-
-
-
-    
-
-
             </div>
-
-
-
-
-
             <div class="request-details">
                
                 <div class="request-header">
@@ -331,7 +336,10 @@
                     <div class="request-controls">
                             <button class="more-btn">More Details</button>
 
-                        <button class="reject btn btn-danger">Reject</button>
+                        <button class="reject btn btn-danger" data-toggle="modal" data-target="#myModal" >Reject</button>
+
+
+
                         <button class="btn btn-success">Approve</button> 
                     </div>
                 </div>
@@ -350,6 +358,26 @@
             </div>
         </div>
 
+  <!-- Modal for reject button-->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Rejection Reason</h4>
+        </div>
+        <div class="modal-body">
+          <p><textarea name="reject-feedback" id="reject-feedback" rows="10"></textarea></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
     </div>
 
 
