@@ -1,18 +1,20 @@
 
+
 .main-section{
-    width: 70% !important;
+    width: 80% !important;
+    min-width: 800px;
+    max-width:100%;
     margin-top: 2rem;
 }
 .options-nav{
     margin-bottom: 2rem;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    cursor: pointer;
 }
 
 .option-item{
     padding:1.5rem 3rem;
-    background-color: #e4e3ef;
+    background-color: #DDDBFF;
     border-right: 1px solid #727272;
     opacity: 0.6;
 }
@@ -45,8 +47,9 @@
 
 .option-details{
     display: grid;
-    grid-template-columns: 20% 30% auto;
+    grid-template-columns: 20% 25% auto;
     background-color:white;
+    box-shadow: 0px 0px 15px 5px rgba(214, 214, 214, 0.65);
 }
 .side-nav,.requests{
     border: 1px solid lightgray;
@@ -55,73 +58,106 @@
 .side-nav .filter-btn{
     border-bottom:1px solid lightgrey
 }
+.filter-btn button{
+    width:130px !important;
+    background: #3B86FF;
+}
 .side-nav .filter-btn,.requests .form-group{
     text-align: center;
     padding-top:1.25rem; 
     height:6rem;
-    
-    
+}
+.dropdown-button{
+    border-radius: 0!important;
+    padding: 17px 16px!important;
+}
+.dropdown-menu{
+    width: 100%;
+}
+#reject-feedback{
+   width: 100%;
+    border: 1px solid #2c2c2c;
+    outline: none;
 }
 .requests .form-group{
+    margin-bottom: 0;
     padding-top: 0;
 }
 .requests .form-group input{
     height: 100%;
     border-radius: 0;
+    outline: none;
+    border: none;
+/*    border-width: 1px;*/
 }
 .filters ul{
     padding:1rem 2rem;
+    color: #4D4F5C;
 }
 .filters ul li{
     margin-bottom: .8rem;
     font-size: 12px;
-    cursor: pointer;
+
 }
 .filter-applied{
     color:rgb(40, 122, 170);
     font-weight: 600;
+}
+.filter-number{
+    float: right;
+}
+.priority{
+    color: #4D4F5C;
 }
 .priority h4{
     margin-left: 1rem;
     font-weight: bold;
 }
 .priority ul li::before{
-    content: "\2022"; 
-    
+    content: "";
     font-weight: bold;
     display: inline-block; 
-    width: 1em; 
-    margin-left: -1em;
+    margin-left: -1.4em;
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    margin-right: 10px;
 }
 
 .priority ul li:nth-child(1)::before{
-    color:gray;
+    background-color:#A3A0FB;
 }
 
 .priority ul li:nth-child(2)::before{
-    color:lightblue;
+    background-color:#3B86FF;
 }
 
 .priority ul li:nth-child(3)::before{
-    color:red;
+    background-color:#FF6565;
 }
 .message-item{
+    color: #43425D;
     height:80px;
     padding: 0;
     position: relative;
+    border-bottom: 1px solid lightgray
 }
 .message-logo{
     display: inline-block;
     height: 100%;
     width:60px;
-    
+    /* outline: 2px solid red; */
     padding-top: 15px;
+/*    background-color: red;*/
 }
 .message-logo img{
+     border-radius: 50%;
     display: block;
     width: 50px;
     height: 50px;
     margin: 0 auto;
+    border: 2px solid #3B86FF;
+    /* outline: 2px solid red; */
 }
 
 .message-name{
@@ -129,7 +165,7 @@
     width:180px;
     position: absolute;
     top:0;
-    left:70px;
+    left:60px;
 }
 .message-name h4{
 
@@ -138,8 +174,8 @@
 }
 .message-text{
     position: absolute;
-    top:50%;
-    left:70px;
+    top:40%;
+    left:60px;
     font-size: 12px;
 }
 .message-date{
@@ -147,10 +183,11 @@
     top:0;
     right:0;
     margin-right: 5px;
+    color: #43425D;
 }
 
 .message-date h4{
-    font-size: 10px;
+    font-size: 8px;
 }
 
 .high{
@@ -168,14 +205,15 @@
 }
 .request-header{
     border-bottom: 1px solid lightgray;
-    padding:1rem 2rem;
+    padding:1rem;
 }
 .p-high{
-    padding:2px 12px;
+    padding:5px 15px;
     border-radius: 10px;
     color: white;
     font-size: 10px;
-    background-color: red;
+    font-weight: bold;
+    background-color: #FF6565;
 }
 .request-title{
     display: inline-block;
@@ -183,6 +221,7 @@
 }
 .request-title h4{
     font-size: 16px;
+    color: #4D4F5C;
 }
 .request-logo{
 }
@@ -203,16 +242,237 @@
 }
 .request-controls button{
     margin: 1rem;
-    width:100px !important;
+    width:25% !important;
 }
 
 .request-content{
     padding: 1rem 2rem;
     font-size: 14px;
+    color: #4D4F5C;
 }
 .reply{
     background-color: lightgray;
     padding:1rem 2rem;
     height:100px;
     margin-top: 2rem;;
+}
+.mobile{
+    display: none;
+}
+
+.message-active{
+    background: #e4e3ef
+}
+
+.more-btn{
+    background: none;
+    border:2px solid rgba(16, 4, 109, 0.62);
+    color:#10046D;
+    border-radius: 5px;
+    padding:.5rem;
+}
+
+.request-details .more-btn{
+    float: left;
+}
+.dropdown-toggle{
+    width: 100%;
+/*    height: 100%;*/
+}
+@media (max-width:1130px){
+    .message-name h4{
+        font-size: 12px;
+    }
+}
+@media (max-width:975px){
+    .main-section{
+        width: 80%;
+    }
+    .message-logo{
+        width:50px;
+    }
+    .message-logo img{
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width:800px){
+    .main-section{
+        width: 100% !important;
+        min-width: auto;
+        max-width: auto;
+        padding-top: 0;
+    }
+    .mobile{
+        display: block;
+    }
+    .container{
+        padding: 0 !important;
+    }
+
+    .active::after{
+        display: none;
+    }
+
+    .options-nav{
+        grid-template-columns: 25% 25% 25% 25%;
+        margin-top: 0;
+    }
+    .option-item{
+        padding:0.2rem 0;
+        height:70px;
+    }
+    .requests{
+        border: none;
+    }
+    .requests .form-group{
+        display: inline-block;
+        width:80%;
+        position: relative;
+        padding-top: 1rem;
+    }
+    .requests .form-group input{
+        height: 60%;
+        width: 75% !important;
+        border-radius: 10px;
+        border:1px solid #10046D;
+        font-size: 10px; 
+    }
+    .requests .form-group i{
+        display: inline-block;
+        position: absolute;
+        top:0;
+        height: 60%;
+        width:12%;
+        color:#10046D;
+        font-size: 24px;
+        padding:.5rem;
+        margin-top:1rem;
+        margin-right: 0;
+    }
+    .requests .form-group i:nth-child(3){
+       right: 0;
+       
+    }
+    
+    .requests .form-group i:nth-child(2){
+        right:12%;
+    }
+    .mobile-back{
+        width: 15%;
+    }
+    .option-name h4{
+        font-size: 10px;
+    }
+    .option-name{
+        
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .option-item .icon img{
+        height: 30px;
+        width: 30px;
+    }
+    .option-details{
+        padding:1rem;
+        grid-template-columns: 100%;
+        grid-template-rows: 0% 100% 0;
+
+    }
+    .mobile-back{
+        display: inline-block;
+    }
+    .mobile-back h4{
+
+        font-size: 12px;
+    }
+    .side-nav{
+        display: none;
+    }
+    .request-details{
+        display: none;
+    }
+
+    .message-logo{
+        height:60px;
+        border-radius: 50%;
+
+    }
+    .message-logo img{
+
+
+    }
+    .message-item{
+        position: relative;
+        height:100px;
+
+    }
+    .request-controls{
+        display: block;
+    }
+    .mobile-more{
+        transform: scale(.8,.8);
+        position: absolute;
+        bottom: 0;
+        left:0;
+    }
+    .message-text{
+        top:30%;
+    }
+    .mobile-controls{
+        display: block;
+        position: absolute;
+        bottom:0;
+        right:0;
+        transform: scale(.8,.8)
+    }
+    .mobile-controls button{
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .request-controls button{
+        width:100px !important;
+    }
+    .message-item{
+        /* height: max-content; */
+        /* padding-bottom: 100px; */
+    }
+    .more{
+        display: none;
+        padding:3rem  1.5rem;
+        background: white;
+    }
+    .more-btn{
+        background: none;
+        border:2px solid #10046D;
+        color:#10046D;
+        border-radius: 10px;
+        padding:.5rem;
+        width: 100%;
+        max-width:130px !important;
+    }
+    .less-btn{
+        background: none;
+        color:#10046D;
+        border:none;
+        float: right;;
+    }
+    .show-more{
+        display: block;
+    }
+
+
+    .main-section{
+        margin-top: 0;
+    }
+    .options-nav{
+        margin-bottom: 0;
+    }
+
+    .dropdown-button{
+        padding: 10px 16px!important;
+    }
+
 }
