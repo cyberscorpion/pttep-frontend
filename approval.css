@@ -14,7 +14,7 @@
 
 .option-item{
     padding:1.5rem 3rem;
-    background-color: #e4e3ef;
+    background-color: #DDDBFF;
     border-right: 1px solid #727272;
     opacity: 0.6;
 }
@@ -49,6 +49,7 @@
     display: grid;
     grid-template-columns: 20% 25% auto;
     background-color:white;
+    box-shadow: 0px 0px 15px 5px rgba(214, 214, 214, 0.65);
 }
 .side-nav,.requests{
     border: 1px solid lightgray;
@@ -65,52 +66,65 @@
     text-align: center;
     padding-top:1.25rem; 
     height:6rem;
-    
-    
 }
 .requests .form-group{
+    margin-bottom: 0;
     padding-top: 0;
 }
 .requests .form-group input{
     height: 100%;
     border-radius: 0;
+    outline: none;
+    border: none;
+/*    border-width: 1px;*/
 }
 .filters ul{
     padding:1rem 2rem;
+    color: #4D4F5C;
 }
 .filters ul li{
     margin-bottom: .8rem;
     font-size: 12px;
+
 }
 .filter-applied{
     color:rgb(40, 122, 170);
     font-weight: 600;
+}
+.filter-number{
+    float: right;
+}
+.priority{
+    color: #4D4F5C;
 }
 .priority h4{
     margin-left: 1rem;
     font-weight: bold;
 }
 .priority ul li::before{
-    content: "\2022"; 
-    
+    content: "";
     font-weight: bold;
     display: inline-block; 
-    width: 1em; 
-    margin-left: -1em;
+    margin-left: -1.4em;
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    margin-right: 10px;
 }
 
 .priority ul li:nth-child(1)::before{
-    color:gray;
+    background-color:#A3A0FB;
 }
 
 .priority ul li:nth-child(2)::before{
-    color:lightblue;
+    background-color:#3B86FF;
 }
 
 .priority ul li:nth-child(3)::before{
-    color:red;
+    background-color:#FF6565;
 }
 .message-item{
+    color: #43425D;
     height:80px;
     padding: 0;
     position: relative;
@@ -122,12 +136,15 @@
     width:60px;
     /* outline: 2px solid red; */
     padding-top: 15px;
+/*    background-color: red;*/
 }
 .message-logo img{
+     border-radius: 50%;
     display: block;
     width: 50px;
     height: 50px;
     margin: 0 auto;
+    border: 2px solid #3B86FF;
     /* outline: 2px solid red; */
 }
 
@@ -154,6 +171,7 @@
     top:0;
     right:0;
     margin-right: 5px;
+    color: #43425D;
 }
 
 .message-date h4{
@@ -178,11 +196,12 @@
     padding:1rem;
 }
 .p-high{
-    padding:2px 12px;
+    padding:5px 15px;
     border-radius: 10px;
     color: white;
     font-size: 10px;
-    background-color: red;
+    font-weight: bold;
+    background-color: #FF6565;
 }
 .request-title{
     display: inline-block;
@@ -190,6 +209,7 @@
 }
 .request-title h4{
     font-size: 16px;
+    color: #4D4F5C;
 }
 .request-logo{
 }
@@ -216,6 +236,7 @@
 .request-content{
     padding: 1rem 2rem;
     font-size: 14px;
+    color: #4D4F5C;
 }
 .reply{
     background-color: lightgray;
@@ -227,16 +248,15 @@
     display: none;
 }
 
-
 .message-active{
     background: #e4e3ef
 }
 
 .more-btn{
     background: none;
-    border:2px solid #10046D;
+    border:2px solid rgba(16, 4, 109, 0.62);
     color:#10046D;
-    border-radius: 10px;
+    border-radius: 5px;
     padding:.5rem;
 }
 
@@ -343,6 +363,7 @@
         padding:1rem;
         grid-template-columns: 100%;
         grid-template-rows: 0% 100% 0;
+
     }
     .mobile-back{
         display: inline-block;
@@ -360,6 +381,12 @@
 
     .message-logo{
         height:60px;
+        border-radius: 50%;
+
+    }
+    .message-logo img{
+
+
     }
     .message-item{
         position: relative;
