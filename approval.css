@@ -68,6 +68,10 @@
     padding-top:1.25rem; 
     height:6rem;
 }
+.filter-text{
+    max-width: 90%;
+    display: inline-block;
+}
 .dropdown-button{
     border-radius: 10px!important;
 /*    padding: 12px 16px!important;*/
