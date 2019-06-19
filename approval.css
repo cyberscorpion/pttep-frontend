@@ -238,7 +238,7 @@
     transform: translateY(25px);
 }
 .request-controls{
-    text-align: end;
+    text-align: right;
 }
 .request-controls button{
     margin: 1rem;
