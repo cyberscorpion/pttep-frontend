@@ -287,8 +287,16 @@
 }
 .dropdown-toggle{
     width: 90%;
-/*    height: 100%;*/
 }
+
+.option-item .icon{
+    height: 70px;
+}
+.option-item .icon img{
+    height: 100%; !important;
+    display: block
+}
+
 @media (max-width:1130px){
     .message-name h4{
         font-size: 12px;
@@ -382,10 +390,17 @@
         padding-right: 0;
     }
 
+    .option-item .icon{
+        margin-top: 5px;
+        height: 30px;
+    }
+
+/*
     .option-item .icon img{
         height: 30px;
         width: 30px;
     }
+*/
     .option-details{
         padding:1rem;
         grid-template-columns: 100%;
