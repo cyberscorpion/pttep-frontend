@@ -2,6 +2,7 @@
     list-style-type: none;
 }
 body{
+    font-family: 'Source Sans Pro', sans-serif !important;
     background-color: #f0f0f7 !important;
 }
 nav{
