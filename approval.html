@@ -7,75 +7,60 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="index.css"  >
+
+<!--<link rel="stylesheet" href="index.css"  >-->
 <link rel="stylesheet" href="approval.css"  >
 <!-- css only     -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <!-- JS, Popper.js, and jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<style>
-    .banner{
-        padding:20px;
-        background-position: 0% 10%;
-    }
-    .banner-content{
-        max-width:30%;
-    }
-    .small button{
-        display: block;
-    }
-    .banner-content  .input-group,.banner-content .input-group input,.banner-content .input-group-btn button{
-        height: 3rem;
-    }
-    @media (max-width:800px){
-        .banner{
-            padding-top:75px;
-        }
-        .banner-content{
-            max-width: 90%;
-        }
-    }
-</style>
 </head>
 <body>
     
 
+
+        <div class="header">
+            <a href="" class="logo">
+                <img src="/assets/images/pttep@2x.png" alt="">
+            </a>
+             <div class="header-right-button">
+              <div class="header-button header-other-btn"><a href="">Other</a></div>
+              <div class="header-button header-login-btn"><a href="">Log in</a></div>
+
+             </div>
+        </div>
+<!--
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
-          <div class="navbar-header navbar-left pull-left">
+          <div class="navbar-header">
             <a href="/" class="navbar-brand">
                 <img src="assets/images/pttep@2x.png"  alt="PTTEP">
             </a>   
           </div>
           
-          <div class="navbar-header navbar-right pull-right">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="">Other</a></li>
-              <li class="login"><a href="">Login</a></li>
-            </ul>
-          </div>
+
           
         </div>
       </nav>
+-->
 
 
-      <div class="banner container-fluid">
-        <div class="banner-content">
+    <div class="main-section container">
+
+           <div class="search-box">
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Search for approval requests,task...." name="search">
              
               <div class="input-group-btn small">
                 <button class="btn btn-success" type="submit"><span class=" glyphicon glyphicon-search"></span>
-</button>
+            </button>
               </div>
             </div>
-        </div>
-    </div>
+            </div>
 
-
-    <div class="main-section container">
         <div class="options-nav ">
             <div class="option-item active">
                 <div class="icon">
@@ -153,26 +138,13 @@
                 </div>
 
                 <div class="form-group only-mobile-view">
-    <div class="dropdown ">
-  <button class="btn dropdown-button btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Dropdown
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-  </ul>
-</div>
-<!--
-                    <input type="text" class="form-control" placeholder="Search by messages/request id">
-                    
-                    <i class="fa fa-search mobile" aria-hidden="true"></i>
-                    <i class="fa fa-filter mobile" aria-hidden="true"></i>
--->
-
+                    <select class="form-control dropdown">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
                 </div>
 
                 <div class="message-container high message-active">
@@ -186,7 +158,7 @@
                         <div class="message-date">
                             <h4>JUN 4</h4>
                         </div>
-                        <div class="message-text">Lorem ipsum dolor sit amet consectetu....</div>
+                        <div class="message-text">Lorem ipsum dolor sit amet consectet</div>
                         <div class="request-controls mobile mobile-controls">
                             <button class="reject btn btn-danger" data-toggle="modal" data-target="#myModal">Reject</button>
                             <button class="btn btn-success">Approve</button> 
@@ -216,7 +188,7 @@
                         <div class="message-date">
                             <h4>JUN 4</h4>
                         </div>
-                        <div class="message-text">Lorem ipsum dolor sit amet consectetu....</div>
+                        <div class="message-text">Lorem ipsum dolor sit amet consectetu</div>
                         <div class="request-controls mobile mobile-controls">
                             <button class="reject btn btn-danger" data-toggle="modal" data-target="#myModal">Reject</button>
                             <button class="btn btn-success">Approve</button> 
@@ -386,7 +358,9 @@
     </div>
 
 
-
+<br>
+<br>
+<br>
 
     <script>
         var mobileBox = document.getElementById("request-more-content");
