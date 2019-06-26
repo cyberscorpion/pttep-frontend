@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TAsk</title>   
+<link rel="stylesheet" href="assets/css/task.css"  >
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- css only     -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <a href="" class="logo">
+            <img src="assets/images/pttep@2x.png" alt="">
+        </a>
+         <div class="header-right-button">
+          <div class="header-button header-other-btn"><a href="">Other</a></div>
+          <div class="header-button header-login-btn"><a href="">Log in</a></div>
+
+         </div>
+    </div>
+
+
+    <div  class="main-section container">
+
+        <div class="search-box">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search for approval requests,task...." name="search">
+             
+              <div class="input-group-btn small">
+                <button class="btn btn-success" type="submit"><span class=" glyphicon glyphicon-search"></span>
+            </button>
+              </div>
+            </div>
+            </div>
+
+        <div class="options-nav ">
+            <div class="option-item ">
+                <div class="icon">
+                    <img src="assets/images/like.svg" alt="">
+                </div>
+                <div class="option-name">
+                    <h4>APPROVAL CENTRAL</h4>
+                </div>
+            </div>
+            <div class="option-item active">
+                <div class="icon">
+                    <img src="assets/images/settings.svg" alt="">
+                </div>
+                <div class="option-name">
+                    <h4>MY TASK</h4>
+                </div>
+            </div>
+            <div class="option-item">
+                <div class="icon">
+                    <img src="assets/images/leaflet.svg" alt="">
+                </div>
+                <div class="option-name">
+                    <h4>SERVICE CATALOGUE</h4>
+                </div>
+            </div>
+            <div class="option-item">
+                <div class="icon">
+                    <img src="assets/images/return-to-the-past.svg" alt="">
+                </div>
+                <div class="option-name">
+                    <h4>APPROVAL HISTORY</h4>
+                </div>
+            </div>
+        </div>
+
+        <div id="task">
+            <div class="task-header">
+                <ul class="status">
+                    <li class="open active-task-filter">Open</li>
+                    <li class="pending">Pending</li>
+                </ul>
+                <div class="search-task">
+                    <input type="text" placeholder="">
+                    <div class="search-task-btn">
+                        <button class="">Search</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task-list">
+                <table class="table table-hover table-striped table-responsive" >
+                    <thead>
+                        <tr>
+                            <th>Request ID</th>
+                            <th>Priority</th>
+                            <th>Status</th>
+                            <th>Request</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>RITM00123</td>
+                            <td>Low4</td>
+                            <td>Open</td>
+                            <td>Biik a Vehicle</td>
+                            <td class="more-details">More Details <i class="fa fa-chevron-down"></i> </td>
+                        </tr>
+                        <tr>
+                            <td>RITM00123</td>
+                            <td>Low4</td>
+                            <td>Open</td>
+                            <td>Biik a Vehicle</td>
+                            <td class="more-details">More Details <i class="fa fa-chevron-down"></i> </td>
+                        </tr>
+                        <tr>
+                            <td>RITM00123</td>
+                            <td>Low4</td>
+                            <td>Open</td>
+                            <td>Biik a Vehicle</td>
+                            <td class="more-details">More Details <i class="fa fa-chevron-down"></i> </td>
+                        </tr>
+                        <tr>
+                            <td>RITM00123</td>
+                            <td>Low4</td>
+                            <td>Open</td>
+                            <td>Biik a Vehicle</td>
+                            <td class="more-details">More Details <i class="fa fa-chevron-down"></i> </td>
+                        </tr>
+                        <tr>
+                            <td>RITM00123</td>
+                            <td>Low4</td>
+                            <td>Open</td>
+                            <td>Biik a Vehicle</td>
+                            <td class="more-details">More Details <i class="fa fa-chevron-down"></i> </td>
+                        </tr>
+
+                    </tbody>
+                    
+                </table>
+            </div>
+            <div class="table-paginator">
+                <div class="align-right">
+                    <div class="rpp">
+                        <h4>Rows Per Page </h4>
+                        <span>10 <i class="fa fa-caret-down"></i> </span>
+                    </div>
+                    <div class="page-control">
+                        <div class="current-page">1-10 of 100</div>
+                        <span class="page-prev"><i class="fa fa-chevron-left"></i></span>
+                        <span class="page-next"><i class="fa fa-chevron-right"></i></span>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+</body>
+</html>
