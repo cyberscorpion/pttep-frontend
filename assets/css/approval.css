@@ -489,6 +489,9 @@ body {
 }
 
 @media (max-width:800px) {
+    .only-web-view{
+        display: none !important;
+    }
     .header {
         height: 70px;
     }
