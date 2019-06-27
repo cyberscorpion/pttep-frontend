@@ -301,13 +301,14 @@ body {
 
 .task-header{
     padding: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .task-header .status,.search-task{
     display: inline-block;
 }
-
-
 .status{
     background-color:#10046D;
     font-weight: bold;
@@ -340,8 +341,8 @@ body {
 }
 .search-task{
     display: flex;
-    float: right;
-    width: 25%;
+/*    float: right;*/
+/*    width: 25%;*/
     position: relative;
 }
 .search-task input{
@@ -427,14 +428,10 @@ tbody>tr:nth-child(2n+1){
         flex-direction: column;
         align-items: center;
     }
-    .status{
-
-    }
     .search-task{
         width: 90%;
     }
-    .task-header{
-    }
+
     .task-list td,th{
         padding-left: 2rem !important;
     }
