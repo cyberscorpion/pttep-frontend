@@ -287,7 +287,10 @@ body {
 .priority ul li:nth-child(3)::before {
     background-color: #FF6565;
 }
-
+.message-list{
+    max-height: 85vh;
+    overflow-y: scroll;
+}
 .message-item {
     color: #43425D;
     height: 80px;
