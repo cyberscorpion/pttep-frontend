@@ -8,7 +8,7 @@ body {
 }
 
 .header {
-    background: url("../images/Artboard.png");
+    background: url("../images/banner_1.jpg");
     background-size: cover;
     background-position: center;
     height: 100px;
@@ -20,6 +20,7 @@ body {
 .header-right-button {
     display: flex;
     align-content: center;
+    margin-right: 1rem;
 }
 
 .header-other-btn {
@@ -144,6 +145,7 @@ body {
     padding: 1.5rem 3rem;
     background-color: #DDDBFF;
     opacity: 0.6;
+    cursor: pointer;
 }
 
 .option-item:not(:last-child) {
