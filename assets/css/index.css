@@ -116,6 +116,7 @@ padding:0 !important;
     margin:4rem;
 }
 .card{
+    text-align: center;
     width:200px;
     height:200px;
     display: flex;
@@ -126,7 +127,8 @@ padding:0 !important;
     background: white;
     box-shadow: 0 0 4px 4px lightgrey;
     cursor: pointer;
-    background-image: linear-gradient(to bottom, #50aae2 , #9bc9e6)
+    background-image: linear-gradient(to bottom, #50aae2 , #9bc9e6);
+    position: relative;
 }
 .icon{
     width:max-content;
@@ -135,6 +137,14 @@ padding:0 !important;
 .card img{
     height:92px;
     margin:0 auto;
+}
+.card-star{
+    color: grey;
+    position: absolute;
+    right: 1.2rem;
+    top:.5rem;
+    z-index: 99;
+    font-size: 2.5rem;
 }
 .card-name h4{
     color:#10046D;
